@@ -1,0 +1,68 @@
+.typePad-div {
+    height: 60vh;
+    transition: background 1s ease;
+
+    position: relative;
+    z-index: 1;
+}
+
+.typePad-div button {
+    background: white;
+    transition: background 1s ease, color 1s ease;
+}
+
+.pad {
+    height: 100%;
+
+    display: grid;
+
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+.border-div {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+    width: 100%;
+
+    border-top: #3a3a3a 4px solid;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+
+    min-height: 15px;
+}
+
+.item-result {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.drag-line {
+    align-self: center;
+    width: 50px;
+    height: 5px;
+    background-color: #3a3a3a;
+    border-radius: 50px;
+}
+
+.item-result,
+.item {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.num-b {
+    border: #3a3a3a 2px solid;
+    border-radius: 100px;
+}
+
+.sign-b,
+.result-b,
+.back-b,
+.clear-b {
+    border: none;
+    
+}
